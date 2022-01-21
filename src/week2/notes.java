@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.Scanner;
+
 public class notes {
 //    public static void main(String[] args) {
 //        for (int count = 0; count <= 10; count ++)
@@ -52,17 +54,94 @@ public class notes {
 //        }
 //    }
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//        int target = 20, total = 1, factor = 2, count = 0;
+//        while (total < target) {
+//
+//            total *= factor;
+//            count++;
+//            System.out.print(" total = " + total);
+//        }
+//        System.out.println(); // prints a blank line
+//        System.out.println("count = " + count);
+//
+//    }
 
-        int target = 20, total = 1, factor = 2, count = 0;
-        while (total < target) {
+//    public static void main(String[] args) {
+//        int x = 0;
+//        do {
+//            System.out.println(x);
+//            x ++;
+//        }while (x < 10);
+//    }
+//    // do loops will run one time even if x is greater than 10 because
+//    // it doesn't check until after the loop
+//public static void main(String[] args) {
+//    Scanner in = new Scanner(System.in);
+//    double value; // declare variable before loop.
+//    do
+//    {
+//        System.out.print("Please enter a positive number: ");
+//        value = in.nextDouble();
+//    } while (value <= 0);
+//    System.out.println("Value is " + value);
+//
+//}
+//public static void main(String[] args) {
+//    int total = 0;
+//    int number = 5;
+//    while (number <= 25)
+//    {
+//        total += number;
+//        System.out.println(total);
+//        number++;
+//
+//    }
+//    System.out.println(" total = " + total);
+//}
 
-            total *= factor;
-            count++;
-            System.out.print(" total = " + total);
+//    public static void main(String[] args) {
+//        int total = 0;
+//        int number = 5;
+//        do {
+//            total += number;
+//            number ++;
+//        }while (number <= 25);
+//        System.out.println(total);
+//    }
+//public static void main(String[] args) {
+//    String s1 = "25";
+//    int number = Integer.parseInt(s1);
+//    System.out.println(number + 10);
+//}
+public static void main(String[] args) {
+    boolean done = false;
+    double total = 0;
+    int count = 0;
+
+    Scanner input = new Scanner(System.in);
+
+    while (!done) {
+        System.out.println("Please enter a number or q to quit: ");
+        String txt = input.next();
+        if (txt.equals("q"))
+        {
+            done = true;
         }
-        System.out.println(); // prints a blank line
-        System.out.println("count = " + count);
-
+        else
+        {
+            total += Double.parseDouble(txt);
+            count ++;
+        }
     }
+    if (count > 0) {
+        System.out.println("Average is " + total / count);
+    }
+    else
+    {
+        System.out.println("Average is 0");
+    }
+}
+
 }
