@@ -20,7 +20,7 @@ public class homework2 {
 //            System.out.print(count + " ");
 //    }
 
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //        double total = 0;
 //        double distance = 10;
 //        int day = 0;
@@ -72,4 +72,59 @@ public class homework2 {
 //    System.out.println();
 //
 //}
+//public static void main(String[] args) {
+//    for (int i = 1, j = 4; (i <= 3 && j > 1); i++, j--)
+//        System.out.println("i = " + i + " j = " + j);
+//
+//}
+//public static void main(String[] args) {
+//    for (int i = 1; i <= 3; i++)
+//        for (int j = 4; j > 1; j--)
+//            System.out.println("i = " + i + " j = " + j);
+//
+//}
+//public static void main(String[] args) {
+//    int sum = 0;
+//    for (int i = 1; i <= 10; i++)
+//
+//    sum = sum + i;
+//    System.out.println(sum);
+//}
+//public static void main(String[] args) {
+//    String s1 = "Simp";
+//    String s2 = "son";
+//    System.out.println((s1 + s2) == "Simpson" );
+//    System.out.println((s1 + s2).equals("Simpson"));
+//    System.out.println(s1 + s2.equals("Simpson") );
+//}
+//public static void main(String[] args) {
+//    String s1 = "Simp";
+//    String s2 = "son";
+//    System.out.println((s1 + s2).compareTo("Simpson"));
+//    System.out.println("Simpson". compareTo("Timpson") );
+//    System.out.println("Simpson". compareTo("Silence") );
+//    System.out.println("Simpson". compareTo("Simpleton") );
+//    System.out.println("Simpson". compareTo("Simpsonian") );
+//    System.out.println("Simpson". compareTo("Sim") );
+//    System.out.println("Simpson". compareTo("simpson"));
+//}
+    public static void main(String[] args) {
+        boolean done = false;
+        int total = 0;
+
+        Scanner input = new Scanner(System.in);
+
+        while (!done) {
+            System.out.print("Please enter a word or q to quit: ");
+            String word = input.next();
+            if (word.equals("q")) {
+                done = true;
+                System.out.println(total);
+            } else {
+
+                total += word.length();
+            }
+
+        }
+    }
 }
