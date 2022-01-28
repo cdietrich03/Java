@@ -36,30 +36,44 @@ public class homework3 {
 //        System.out.println(number * number);
 //    }
 //public static int func1(int x, String y) {
+//return 0;
 //
 //}
 //
 //    public static String func2(String x, int y) {
-//
+//    return "";
 //    }
 //
 //    public static void main(String[] args) {
 //        int a = 1;
 //        String b = "hi";
-//        System.out.println(func1(2 * a, a + b));
+//        System.out.println(func2(b + func1(5, b), func1(a, b) + func1(a/2, b)));
 //
 //    }
-    public static String words(String s1, String s2, int n)
+//    public static String words(String s1, String s2, int n)
+//    {
+//        String total = (s1 + (s2 * n));
+//
+//        return total;
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(words("Hi", "Lo", 10));
+//
+//    }
+    public static boolean tf(String s1, String s2, String s3)
     {
-        String total = (s1 + (s2 * n));
-
-        return total;
-
+        if (((s1.compareTo(s2)) < 0) && ((s2.compareTo(s3)) < 0) | (((s3.compareTo(s2) < 0) && (((s2.compareTo(s1) < 0))))))
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
-
     public static void main(String[] args) {
-        System.out.println(words("Hi", "Lo", 10));
-
+        System.out.println(tf("a cup", "a slip", "a lip"));
     }
 }
 

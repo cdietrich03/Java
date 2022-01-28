@@ -43,25 +43,25 @@ public class notes {
 //
 //
 //}
-    public static String singFullSong(String name, int age) {
-        String mainClause = "Happy birthday to you";
-        String out = "Happy birthday to you, happy birthday to you";
-        out += " Happy birthday dear " + name;
-        out += " Happy birthday to you";
-        return out;
-    }
-
-    public static void singHappyBirthday(String name, int age){
-        System.out.println("Happy Birthday " + name);
-        System.out.println("You are " + age + " years old");
-        System.out.println(singFullSong("Suzy", 6));
-
-    }
-    public static void main(String[] args) {
-        System.out.println("Starting main");
-        singHappyBirthday("Suzy", 6);
-        System.out.println("Back in main");
-}
+//    public static String singFullSong(String name, int age) {
+//        String mainClause = "Happy birthday to you";
+//        String out = "Happy birthday to you, happy birthday to you";
+//        out += " Happy birthday dear " + name;
+//        out += " Happy birthday to you";
+//        return out;
+//    }
+//
+//    public static void singHappyBirthday(String name, int age){
+//        System.out.println("Happy Birthday " + name);
+//        System.out.println("You are " + age + " years old");
+//        System.out.println(singFullSong("Suzy", 6));
+//
+//    }
+//    public static void main(String[] args) {
+//        System.out.println("Starting main");
+//        singHappyBirthday("Suzy", 6);
+//        System.out.println("Back in main");
+//}
 //public static boolean badFunction (int int1) {
 //    if (int1 > 0) return true;
 //    else if (int1 < 0) return false;
@@ -92,6 +92,7 @@ public class notes {
 //            System.out.println("it is odd");
 //        }
 //    }
+
 
 }
 
