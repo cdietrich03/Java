@@ -3,13 +3,13 @@ package week3;
 public class BankAccount {
 
     // Attributes
-    private String owner;
+    private Person owner;
     private double balance;
     private int account;
 
     // constructor
-    public BankAccount(String name, int account) {
-        owner = name;
+    public BankAccount(Person owner, int account) {
+        this.owner = owner;
         balance = 0;
         this.account = account;
     }
@@ -33,12 +33,12 @@ public class BankAccount {
         return owner + " has account " + account +  " with balance " + balance;
     }
 
-    public static void main(String[] args) {
-        BankAccount suzyAcct = new BankAccount("Suzy", 1234);
-        System.out.println(suzyAcct);
-        suzyAcct.deposit(200.00);
-        System.out.println(suzyAcct);
-        suzyAcct.withdraw(100.00);
-        System.out.println(suzyAcct);
-    }
+//    public static void main(String[] args) {
+//        BankAccount suzyAcct = new BankAccount("Suzy", 1234);
+//        System.out.println(suzyAcct);
+//        suzyAcct.deposit(200.00);
+//        System.out.println(suzyAcct);
+//        suzyAcct.withdraw(100.00);
+//        System.out.println(suzyAcct);
+//    }
 }
