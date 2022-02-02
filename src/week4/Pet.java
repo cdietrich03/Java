@@ -3,6 +3,7 @@ package week4;
 public class Pet {
 
     //attributes
+    private static int numberOfPetExist = 0;
     private String type;
     private String name;
     private int numberOfPets;
@@ -12,20 +13,25 @@ public class Pet {
         this.type = type;
         this.name = name;
         this.numberOfPets = numberOfPets;
+        numberOfPetExist++;
     }
 
     //other methods
+    public static int getNumberOfPetExist() {
+        return numberOfPetExist;
+    }
+
     public void petThePet(int times) {
         numberOfPets += times;
     }
 
-    public void sameName (int x) {
-        System.out.println("The integer is x");
-    }
+//    public void sameName (int x) {
+//        System.out.println("The integer is x");
+//    }
 // above and below is overloaded, only works with dif variable types
-    public void sameName(String x) {
-        System.out.println("The string is " + x);
-    }
+//    public void sameName(String x) {
+//        System.out.println("The string is " + x);
+//    }
 
     //print method
     public String toString() {

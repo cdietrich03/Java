@@ -15,7 +15,7 @@ public class Student {
     }
 
     public String toString() {
-    String out = name + " has " + ID + " ID.";
+    String out = name + "'s ID is " + ID;
     return out;
     }
 

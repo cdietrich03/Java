@@ -51,16 +51,14 @@ public class homework3 {
 //
 //    }
 //    public static String words(String s1, String s2, int n)
-//    {
-//        String total = (s1 + (s2 * n));
-//
-//        return total;
-//
+//    {return s2;
+//        for (int total = 0; total <= n; total ++) {
+//            System.out.print(s1);
+//    }
 //    }
 //
 //    public static void main(String[] args) {
-//        System.out.println(words("Hi", "Lo", 10));
-//
+//        System.out.println(words("Lo", "Hi", 5));
 //    }
 //    public static boolean tf(String s1, String s2, String s3)
 //    {
