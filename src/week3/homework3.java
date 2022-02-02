@@ -64,7 +64,7 @@ public class homework3 {
 //    }
 //    public static boolean tf(String s1, String s2, String s3)
 //    {
-//        if (((s1.compareTo(s2)) < 0) && ((s2.compareTo(s3)) < 0) | (((s3.compareTo(s2) < 0) && (((s2.compareTo(s1) < 0))))))
+//        if (((s1.compareTo(s2)) < 0) && ((s2.compareTo(s3)) < 0) || (((s3.compareTo(s2) < 0) && (((s2.compareTo(s1) < 0))))))
 //        {
 //            return true;
 //        }
@@ -73,7 +73,7 @@ public class homework3 {
 //        }
 //    }
 //    public static void main(String[] args) {
-//        System.out.println(tf("a cup", "a slip", "a lip"));
+//        System.out.println(tf("hard place", "man", "rock"));
 //    }
 
 //    public static void printRows1(int maxRows, int maxCols) {
@@ -85,17 +85,40 @@ public class homework3 {
 //        }
 //    }
 
-    public static void printRows2(int maxRows, int maxCols) {
-        for (int count = 1; count <= (maxCols * maxRows); count++) {
-            System.out.print("*");
-            if (count % 4 == 0) {
-                System.out.println();
-            }
-        }
-    }
-    public static void main(String[] args) {
-        printRows2(3,4);
-    }
+//    public static void printRows2(int maxRows, int maxCols) {
+//        for (int count = 1; count <= (maxCols * maxRows); count++) {
+//            System.out.print("*");
+//            if (count % 4 == 0) {
+//                System.out.println();
+//            }
+//        }
+//    }
+//    public static void main(String[] args) {
+//        printRows2(3,4);
+//    }
+
+//    public static void main(String[] args) {
+//
+//    }
+
+//    public static int divide(int number) {
+//        int total = 100, count = 1;
+//        int divisible = 0;
+//        while (count <= total) {
+//            count ++;
+//            count % number = ;
+//            if (divisible == 0) {
+//                divisible ++;
+//            }
+//        }
+//        return count;
+//}
+//
+//    public static void main(String[] args) {
+//        System.out.println(divide(2));
+//    }
+
+
 }
 
 
