@@ -50,16 +50,16 @@ public class homework3 {
 //        System.out.println(func2(b + func1(5, b), func1(a, b) + func1(a/2, b)));
 //
 //    }
-//    public static String words(String s1, String s2, int n)
-//    {return s2;
-//        for (int total = 0; total <= n; total ++) {
-//            System.out.print(s1);
-//    }
-//    }
-//
-//    public static void main(String[] args) {
-//        System.out.println(words("Lo", "Hi", 5));
-//    }
+    public static String words(String s1, String s2, int n) {
+    int total = 0;
+    while (total <= n) {
+        total ++;
+        s2 += s1;}
+    return s2;}
+
+    public static void main(String[] args) {
+        System.out.println(words("Lo", "Hi", 5));
+    }
 //    public static boolean tf(String s1, String s2, String s3)
 //    {
 //        if (((s1.compareTo(s2)) < 0) && ((s2.compareTo(s3)) < 0) || (((s3.compareTo(s2) < 0) && (((s2.compareTo(s1) < 0))))))
@@ -101,21 +101,19 @@ public class homework3 {
 
 //    public static int divide(int number) {
 //        int total = 100, count = 1;
-//        int divisible = 0;
+//        int divide = 0;
 //        while (count <= total) {
 //            count ++;
-//            count % number = ;
-//            if (divisible == 0) {
-//                divisible ++;
+//            int remainder = count % number;
+//            if (remainder == 0) {
+//                divide ++;
 //            }
 //        }
-//        return count;
+//        return divide;
 //}
-//
 //    public static void main(String[] args) {
 //        System.out.println(divide(2));
 //    }
-
 
 }
 
