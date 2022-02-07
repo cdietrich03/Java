@@ -4,7 +4,7 @@ public class BankAccount {
 
     // Attributes
     private static int numberOfAccounts = 0;
-    private String owner;
+    String owner;
     private double balance;
     private int account;
 
