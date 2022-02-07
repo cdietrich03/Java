@@ -2,6 +2,8 @@ package week3;
 
 public class BankAccount {
 
+    private static int nextId = 100;
+
     // Attributes
     private static int numberOfAccounts = 0;
     private String owner;
@@ -10,10 +12,12 @@ public class BankAccount {
 
     // constructor
     public BankAccount(String owner, int account) {
-        this.owner = owner;
-        balance = 0;
-        this.account = account;
-        numberOfAccounts ++;
+//        this.owner = owner;
+//        balance = 0;
+//        this.account = nextId;
+//        nextId++;
+//        numberOfAccounts ++;
+        this(owner, nextId++, 0);
     }
 
     public BankAccount(String owner, int account, double balance) {
