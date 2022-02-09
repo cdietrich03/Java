@@ -12,7 +12,7 @@ public class ExtraMathFunctions {
     }
 
     public static void main(String[] args) {
-        System.out.println(findPercent(100, 200)+ "%");
-        System.out.println(percentOf(20,115));
+        System.out.println(ExtraMathFunctions.findPercent(100, 200)+ "%");
+        System.out.println(ExtraMathFunctions.percentOf(20,115));
     }
 }
