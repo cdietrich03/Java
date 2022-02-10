@@ -17,9 +17,15 @@ public class Student {
         nextID ++;
     }
 
-//    public boolean precedesById(int Student) {this.ID < Student.ID
-//
-//    }
+    public boolean precedesById(Student student) {
+
+        boolean precede = false;
+        if (this.ID < student.ID) {
+            precede = true;
+        }
+
+     return precede;}
+
     public void changeName(String newName) {
         this.name = newName;
     }

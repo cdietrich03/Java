@@ -16,6 +16,6 @@ public class StudentSchedule {
 //
 //        Student Fred = new Student("Fred");
 //        System.out.println(Fred);
-//        System.out.println(bob1.precedesById(bob2));
+        System.out.println(bob1.precedesById(bob1));
     }
 }
