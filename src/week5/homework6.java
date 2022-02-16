@@ -31,9 +31,9 @@ public class homework6 {
         ArrayList<Double> list2 = new ArrayList<>();
         list2.add(5.5);
         list2.add(6.6);
-        (list2, list1);
+        for (Double item : list1) {
+            list2.add(item);
+        }
         System.out.println(list2);
-
-
     }
 }
