@@ -56,5 +56,7 @@ public class StudentSchedule {
         System.out.println(bob1);
         System.out.println(" ");
 
+        WorkStudyStudent bill = new WorkStudyStudent("Bill", 1237, 8);
+        System.out.println(bill);
     }
 }
